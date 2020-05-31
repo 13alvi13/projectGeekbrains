@@ -127,6 +127,11 @@ body {
     font-weight: 700;
     color: rgba(34, 34, 34, 1);
     text-transform: uppercase;
+    padding-bottom: 12px;
+
+}
+.menu__link:hover {
+    border-bottom: 4px solid rgba(239, 91, 112, 1);
 }
 .bannerTop {
     height: 665px;
@@ -508,8 +513,6 @@ body {
     line-height: 42px;
     text-decoration: none;
 }
-.footerTop_list:hover {
-}
 .footerTop_list > a:hover {
     color: black;
 
@@ -548,4 +551,82 @@ body {
     background-color: rgba(241, 109, 127, 1);
     color: rgba(255, 255, 255, 1);
     transition: all 0.4s;
+}
+
+/* Далее страница shoppingCart*/
+
+.breadcrumb {
+    height: 148px;
+    background: rgba(248, 243, 244, 1);
+    display: flex;
+}
+.breadcrumb_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new_h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgba(241, 109, 127, 1);
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.breadcrumb_box{
+    display: flex;
+}
+.breadcrumb_name {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(99, 99, 99, 1);
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.breadcrumb_name:last-child {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.shoppingCart {
+
+}
+.shoppingCart_headers {
+    display: flex;
+}
+.shoppingCart_h2 {
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: -0.01em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.item {
+
+}
+.item__details {
+
+}
+.details__content {
+
+}
+.details__content_name {
+    font-size: 13px;
+    color: rgba(34, 34, 34, 1);
+    text-align: right;
+    text-transform: uppercase;
+}
+.details__content_text {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(111, 110, 110, 1);
+    line-height: 20px;
+}
+.details__content_span {
+    font-size: 13px;
+    color: rgba(87, 87, 87, 1);
+    line-height: 20px;
 }

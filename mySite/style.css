@@ -843,6 +843,20 @@ body {
 
 /* Страница singlePage */
 
+.carousel {
+
+}
+.slide {
+    display: flex;
+    justify-content: center;
+}
+.carousel-inner {
+    width: 50%;
+}
+
+
+
+
 .description {
     display: flex;
     flex-direction: column;
@@ -926,6 +940,7 @@ body {
     font-weight: bold;
     color: rgba(47, 47, 47, 1);
     line-height: 24px;
+    margin-bottom: 16px;
 }
 .description_button {
     color: rgba(255, 255, 255, 1);
@@ -948,6 +963,15 @@ body {
 .description_button > i {
     padding-right: 15px;
 }
-.vysota {
-   height: 777px;
+.description_select {
+    height: 35px;
+    width: 144px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    font-size: 13px;
+    color: rgba(188, 188, 188, 1);
+    text-align: center;
+    line-height: 24px;
+    outline: none;
+    padding-left: 15px;
 }

@@ -8,6 +8,7 @@
 @import "styles/webpages/index.css";
 @import "styles/webpages/shoppingCart.css";
 @import "styles/webpages/singlePage.css";
+@import "styles/webpages/product.css";
 * {
     margin: 0;
     padding: 0;

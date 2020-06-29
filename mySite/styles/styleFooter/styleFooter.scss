@@ -1,0 +1,122 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+.footer {
+  margin-top: 123px;
+}
+.footerTop_content {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+}
+.info_block {
+  width: 430px;
+  &> ul {
+    margin-top: 40px;
+  }
+}
+.info_text {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(137, 137, 137, 1);
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-top: 29px;
+  line-height: 24px;
+  margin-bottom: 65px;
+}
+.footerTop_h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: $colorSite;
+  letter-spacing: 0.03em;
+  line-height: 26px;
+}
+.footerTop_list {
+  list-style-type: none;
+
+  & > a {
+    font-size: 16px;
+    color: rgba(137, 137, 137, 1);
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+
+    }
+  }
+}
+.footerBottom {
+  background-color: rgba(230, 230, 230, 1);
+}
+.footerBottom__content {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.footerBottom__left {
+  font-size: 16px;
+  color: rgba(122, 122, 122, 1);
+  text-align: right;
+  letter-spacing: 0.03em;
+}
+.social {
+  align-items: center;
+  font-size: 16px;
+  color: rgba(178, 178, 178, 1);
+  text-align: right;
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  padding: 8px 12px;
+  background-color: $colorWhite;
+  margin-right: 8px;
+  &:hover {
+    background-color: $colorSite;
+    color: $colorWhite;
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 1145px){
+  .footer {
+    margin-top: 15px;
+  }
+  .footerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerTop_block > ul {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 745px) {
+  .footerTop_content {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .info_block {
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footerBottom__content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .footerBottom__right {
+    margin-top: 10px;
+  }
+}

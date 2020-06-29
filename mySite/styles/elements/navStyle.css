@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: center; }
+
+.menu {
+  list-style-type: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu__list:not(:last-child) {
+  margin-right: 45px; }
+
+.menu__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 12px; }
+  .menu__link:hover {
+    border-bottom: 4px solid #ef5b70; }
+
+@media screen and (max-width: 680px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center; }
+
+  .menu__list:not(:last-child) {
+    margin: 0; } }
+
+/*# sourceMappingURL=navStyle.css.map */

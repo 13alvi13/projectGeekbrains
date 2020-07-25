@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Домашнее задание 2</title>
+
 </head>
 <body>
 <script>
     'use strict'
+    /*
     //Задание 1:  Объясните почему код даёт именно такие результаты?
     
     //пример 1
@@ -129,6 +131,44 @@
         alert("Ваша сумма в " + money +  rub + " успешно зачислена.");
     }
     getMoney2(money)
+     */
+    function getLastNumber (sum) {
+        let penultimateNumber = getPenultimateNumber(sum);
+        if (penultimateNumber == 1);{
+        return "рублей";
+        }
+        sum = String(sum);
+        let lastNumber = Number(sum.charAt(sum.length -1));
+        switch (lastNumber) {
+            case 1:
+                return "рубль"
+            case 2:
+            case 3:
+            case 4:
+                return "рубля"
+            case 0:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+                return "рублей"
+
+        }
+
+    }
+
+    function getPenultimateNumber(sum){
+        sum = String(sum);
+        const digit= sum.charAt(sum.length -2);
+        if(digit !== "") {
+            return  Number(digit);
+        }
+        return null;
+    }
+    let money = +prompt("Введите количество денег");
+    alert('Ваша сумма в ' + money +  getLastNumber(money) +' успешно зачислена.');
+
 
 </script>
 
